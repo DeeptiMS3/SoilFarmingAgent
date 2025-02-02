@@ -1,0 +1,136 @@
+body {
+    font-family: 'Averia Sans Libre';
+    color: white;
+    letter-spacing: 2px;
+}
+
+#adminpreloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    /* Ensure it covers at least viewport height */
+    background-color: black;
+    z-index: 9999;
+    /* Adjust z-index as needed */
+}
+
+#adminpreloader .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#adminpreloader .loader:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #66FF66;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.sidebar {
+    height: 100vh;
+    background-color: #8BC34A;
+    padding-top: 20px;
+    position: fixed;
+    width: 250px;
+    transition: width 0.3s;
+}
+
+.sidebar a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.sidebar .navItems:hover {
+    background-color: #4CAF50;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    padding-top: 0;
+    transition: margin-left 0.3s;
+}
+
+.navbar {
+    background-color: #8BC34A;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-text {
+    color: white;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card img {
+    border-radius: 5px;
+}
+
+.card p {
+    background-color: #eefdf3;
+    color: #238541;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    border-radius: 20px;
+}
+
+button {
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+    }
+
+    .sidebar a span {
+        display: none;
+    }
+
+    .content {
+        margin-left: 70px;
+    }
+
+    .sidebar .expand-btn {
+        display: block;
+    }
+}
+
+.expand-btn {
+    display: none;
+    text-align: right;
+    padding-right: 10px;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoilSage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background: url('/assets/images/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+    </style>
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Bootstrap" width="60" height="54"><span class="fs-4 brandnav"
+                    style=" letter-spacing: 3px;">SoilSage</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbarlinks" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link pageActive" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center fs-5 mt-4">
+        <div style="letter-spacing: 3px;">
+            <h4 id="typewriter"><span id="cursor">|</span></h4>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5 section fade-in" id="section1">
+        <div class="row align-items-start">
+            <div class="col-7" style="background-color: rgba(0, 0, 0, 0.288); padding-left: 50px;">
+                <h3 class="mb-3 mt-3">Precision Agriculture Made Simple</h3>
+                <p>
+                    Unlock the full potential of your land with Soil Farming Agent, connecting farmers and distributors
+                    to expert insights on soil types and their ideal crops. Our platform provides the tools and
+                    information needed to optimize yields and grow sustainably, making advanced agriculture simple and
+                    accessible.</p>
+                <button class="mb-3" id="learnmoreBtn" onclick="func()">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 section " id="section2">
+        <div class="row align-items-start pb-5">
+            <div class="col-7" style="background-color: rgba(0, 0, 0, 0.288); padding-left: 50px;">
+                <h3 class="mb-1 mt-3">Welcome to Soil Farming Agent</h3>
+                <p>We are dedicated to revolutionizing the way soil is farmed.</p>
+                <div class="row  align-items-start">
+                    <div class="col-1 pb-3"><img src="assets/images/trophy.png" alt="" width="45" height="45"></div>
+                    <div class="col-6">
+                        <h6>Increase Crop Yield</h6>
+                        <p>Our agent utilizes advanced technology to optimize soil conditions and maximize crop yield.
+                        </p>
+                    </div>
+                </div>
+                <div class="row  align-items-start">
+                    <div class="col-1 pb-3"><img src="assets/images/growth-chart.png" alt="" width="45" height="45">
+                    </div>
+                    <div class="col-6">
+                        <h6>Sustainable Farming Practices</h6>
+                        <p>By promoting healthy soil ecosystems, we help farmers adopt sustainable farming practices.
+                        </p>
+                    </div>
+                </div>
+                <div class="row  align-items-start">
+                    <div class="col-1 pb-3"><img src="assets/images/aim.png" alt="" width="45" height="45"></div>
+                    <div class="col-6">
+                        <h6>Improve Soil Health Crop</h6>
+                        <p>Our agent works to improve soil fertility, structure, and nutrient content for healthier
+                            crops.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container" style="height: 100px;">
+
+    </div>
+
+    <footer class="footer  pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <h5>About Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="about.html">Our Team</a></li>
+                        <li><a href="about.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="">Blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Get Involved</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">&copy; 2023 SoilSage. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Start the typing animation
+
+        const text = "Cultivating Success with Every Seed!";
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("typewriter").innerHTML = text.substring(0, index + 1) + '<span id="cursor">|</span>';
+                index++;
+                setTimeout(typeWriter, 100); // Adjust typing speed (milliseconds)
+            }
+        }
+
+        setTimeout(typeWriter, 1500);
+
+
+        // 2-second pause before starting the typing effect
+
+        const func = () => {
+            let section2 = document.getElementById("section2");
+            let section1 = document.getElementById("section1");
+            let footer = document.querySelector('footer');
+
+            // Hide the footer during the transition
+            footer.style.marginTop = '500px';
+
+            section1.classList.add('fade-out');
+            section1.classList.remove('fade-in');
+
+            section1.addEventListener('transitionend', function () {
+                section1.style.display = 'none';
+                section2.classList.add('fade-in');
+                section2.classList.remove('fade-out');
+                section2.style.display = 'block';
+
+                // Show the footer after the transition is complete
+                footer.style.marginTop = '0px';
+            }, { once: true });
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+    "Soil Details": [
+        {
+            "Location": "Delhi",
+            "Soil Type": "Black Soil",
+            "Soil pH": "6.5",
+            "Organic Matter": "5%",
+            "Soil Moisture": "30%",
+            "Texture": "Sandy Loam",
+            "Soil Nutrients": {
+                "Nitrogen": "10%",
+                "Phosphorus": "5%",
+                "Potassium": "5%"
+            },
+            "Crops Suitable": [
+                "Chickpea",
+                "Banana",
+                "Cotton"
+            ]
+        }
+    ]
+}
